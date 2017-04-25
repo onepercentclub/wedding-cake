@@ -3,8 +3,8 @@ import Component, { tracked } from '@glimmer/component';
 import { milestones, totalEngaged } from '../../../../utils/settings';
 
 export default class EngagementGraph extends Component {
-    @tracked weightedMilestones: number[] = [];
-    @tracked weightedEngagementNumber: number = 0;
+    @tracked weightedMilestones: object[] = [];
+    @tracked weightedEngagementNumber: number = 11;
 
     didInsertElement() {
         this.updateWeightedEngagementNumber();
@@ -24,6 +24,9 @@ export default class EngagementGraph extends Component {
     }
 
     updateWeightedMilestones() {
-        return this.weightedMilestones = milestones.map((milestone) => this.calculateWeighted(milestone));
+        return this.weightedMilestones = milestones.map((milestone) => ({
+            value: milestone,
+            weighted: this.calculateWeighted(milestone),
+        }));
     }
 }; 
