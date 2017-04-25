@@ -21,18 +21,18 @@ body {
     >div {
       flex: 1 auto;
     }
-}
 
-.dashboard__main-title {
-    flex: 0;
-    @include center-text;
+    .dashboard__main-title {
+        flex: 0;
+        @include center-text;
 
-}
+    }
 
-.dashboard__main-number {
-    flex: 4;
-    @include center-text;
-    justify-content: center;
+    .dashboard__main-number {
+        flex: 2.5;
+        @include center-text;
+        justify-content: center;
+    }
 }
 
 .bhag-background {
