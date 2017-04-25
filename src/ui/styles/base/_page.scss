@@ -1,3 +1,36 @@
+html {
+    height: 100vh;
+}
+
 body {
     background-color: gold;
+    margin: 0;
+    padding: 1em;
+    height: 100%;
+
+    >div {
+        height: 100%;
+    }
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+
+.dashboard__header {
+    flex: 1;
+    @include right-text;
+}
+
+.dashboard__main-title { 
+    @include center-text;
+}
+
+.dashboard__main-number {
+    flex: 1;
+    @include center-text;
+    justify-content: center;
 }
