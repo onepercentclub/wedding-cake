@@ -1,7 +1,7 @@
 <div class="dashboard__sub-numbers">
     <div class="dashboard__sub-numbers--graph"></div>
     <div class="dashboard__sub-numbers--numbers">
-        <svg viewBox="0 0 500 100" class="chart">
+        <svg class="chart">
             <g class="bar">
                 <rect
                     height="19"
@@ -16,6 +16,18 @@
                     width="{{weightedEngagementNumber}}%"
                     y="40"
                 ></rect>
+            </g>
+
+            <g>
+                {{#each weightedMilestones key="@index" as |milestone|}}
+                    <line
+                        style="stroke: green; stroke-width: 1"
+                        x1="{{milestone}}%"
+                        x2="{{milestone}}%"
+                        y1="0"
+                        y2="100%"
+                    ></line>
+                {{/each}}
             </g>
         </svg>
     </div>
