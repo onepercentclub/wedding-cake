@@ -13,21 +13,18 @@ body {
     margin: 0;
 }
 
-.logo {
-  img {
-    width: 70%;
-  }
-}
-
 .dashboard {
+    display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
 
+    >div {
+      flex: 1 auto;
+    }
 }
 
 .dashboard__main-title {
     @include center-text;
-
 }
 
 .dashboard__main-number {
@@ -38,6 +35,9 @@ body {
 .bhag-background {
   position: absolute;
   bottom: 0;
+  width: 100%;
+  z-index: -1;
+
   img {
     width: 70%;
   }
