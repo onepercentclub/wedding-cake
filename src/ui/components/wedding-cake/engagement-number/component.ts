@@ -1,5 +1,5 @@
-import Component, { tracked } from '@glimmer/component';
+import Component from '@glimmer/component';
 
 export default class EngagementNumber extends Component {
-    @tracked eNumber: number = 9000;
+
 };
