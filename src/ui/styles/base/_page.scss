@@ -24,10 +24,13 @@ body {
 }
 
 .dashboard__main-title {
+    flex: 0;
     @include center-text;
+
 }
 
 .dashboard__main-number {
+    flex: 4;
     @include center-text;
     justify-content: center;
 }
