@@ -1,9 +1,10 @@
 html {
     height: 100vh;
+    font-family: 'Nunito', sans-serif;
 }
 
 body {
-    background-color: gold;
+    background-color: $white;
     margin: 0;
     padding: 1em;
     height: 100%;
@@ -17,20 +18,22 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    
+
 }
 
-.dashboard__header {
+.dashboard__main-title {
     flex: 1;
-    @include right-text;
-}
-
-.dashboard__main-title { 
     @include center-text;
+
 }
 
 .dashboard__main-number {
     flex: 1;
     @include center-text;
     justify-content: center;
+}
+
+.bhag-background {
+  position: absolute;
+  bottom: 0;
 }
