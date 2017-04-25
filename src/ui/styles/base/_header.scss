@@ -1,8 +1,8 @@
 .dashboard__header {
   display: flex;
   flex-direction: row;
-  flex: 1;
   justify-content: space-between;
+  padding: 1em 1em 0 1em;
 
   .dashboard__header--left {
     //align-self: flex-start;

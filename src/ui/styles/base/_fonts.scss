@@ -1,15 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800');
 
 .dashboard__main-title {
   h1 {
     font-size: 96px;
     font-weight: 300;
+    color: $color-primary;
   }
 }
 
 .dashboard__main-number {
   h2 {
     font-size: 160px;
-    font-weight: 700;
+    font-weight: 800;
+    color: $color-primary;
+  }
+}
+
+.dashboard__header--right {
+  h3 {
+    font-size: 32px;
+    font-weight: 300;
+    color: $color-primary;
   }
 }
