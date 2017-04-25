@@ -2,12 +2,21 @@
     <div class="dashboard__sub-numbers--graph"></div>
     <div class="dashboard__sub-numbers--numbers">
         <svg viewBox="0 0 500 100" class="chart">
-            <polyline
-                fill="none"
-                stroke="#0074d9"
-                stroke-width="3"
-                points={{chartPoints}}
-            />
+            <g class="bar">
+                <rect
+                    height="19"
+                    style="fill: #FFEFF4"
+                    width="100%"
+                    y="40"
+                ></rect>
+
+                <rect
+                    height="19"
+                    style="fill: #FF619A"
+                    width="{{weightedEngagementNumber}}%"
+                    y="40"
+                ></rect>
+            </g>
         </svg>
     </div>
   </div>
