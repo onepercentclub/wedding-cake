@@ -1,14 +1,28 @@
 .dashboard__sub-numbers {
-    flex: 1;
     flex-direction: column;
 }
 
 .dashboard__sub-numbers--graph {
+  position: relative;
+  bottom:0;
 
+  .chart {
+    width: 100%;
+  }
+
+  svg {
+    .bar {
+      fill: $color-secondary;
+    }
+
+    .background {
+      fill: $white;
+    }
+  }
 }
 
 .dashboard__sub-numbers--numbers {
-  flex: 1;
+  //flex: 1;
   flex-direction: row;
 
 }

@@ -5,11 +5,13 @@ export default class WeddingCake extends Component {
 
     didInsertElement() {
         this.getEngagementNumber();
+
+        // refresh the number every 10 minutes
+        setInterval(this.getEngagementNumber, 1000 * 60 * 10);
     }
 
     async getEngagementNumber() {
         const response = await fetch('http://onepercent.localhost:8000/api/analytics/engagement-number');
-        console.log(response);
         const json = await response.json();
         this.engagementNumber = json.engagement_number;
     }
