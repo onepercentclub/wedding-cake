@@ -1,5 +1,7 @@
 import Component, { tracked } from "@glimmer/component";
 
+import { endpoint } from '../../../utils/settings';
+
 export default class WeddingCake extends Component {
     @tracked engagementNumber: number = 0;
 
@@ -11,7 +13,7 @@ export default class WeddingCake extends Component {
     }
 
     async getEngagementNumber() {
-        const response = await fetch('http://onepercent.localhost:8000/api/analytics/engagement-number');
+        const response = await fetch(endpoint);
         const json = await response.json();
         this.engagementNumber = json.engagement_number;
     }
