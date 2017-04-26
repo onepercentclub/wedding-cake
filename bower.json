@@ -1,1 +1,18 @@
-{}
+{
+  "name": "wedding-cake",
+  "description": "We cannot wait until the BHAG wedding!",
+  "main": "",
+  "authors": [
+    "Pieter van Rees <pieter@onepercentclub.com"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/onepercentclub/wedding-cake",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
