@@ -5,8 +5,8 @@ import { milestones, totalEngaged } from '../../../../utils/settings';
 export default class EngagementGraph extends Component {
     @tracked weightedMilestones: object[] = [];
     @tracked weightedEngagementNumber: object = {
-      weighted: 11,
-      textPosition: 5,
+      weighted: 0,
+      textPosition: 0,
     };
 
     didInsertElement() {
