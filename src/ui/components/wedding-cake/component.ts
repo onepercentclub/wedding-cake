@@ -15,6 +15,6 @@ export default class WeddingCake extends Component {
     async getEngagementNumber() {
         const response = await fetch(endpoint);
         const json = await response.json();
-        this.engagementNumber = json.engagement_number;
+        this.engagementNumber = json.results[0].series[0].values[0][1];
     }
 };
