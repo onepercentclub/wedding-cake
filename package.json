@@ -10,9 +10,9 @@
     "build": "ember build",
     "start": "ember server",
     "test": "ember test",
-    "heroku-postbuild": "ember build"
+    "heroku-postbuild": "yarn install ember-cli@2.13.0; ember build"
   },
-  "dependencies": {
+  "devDependencies": {
     "@glimmer/application": "^0.4.0",
     "@glimmer/application-pipeline": "^0.5.2",
     "@glimmer/blueprint": "^0.1.12",
