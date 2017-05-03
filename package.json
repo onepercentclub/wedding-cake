@@ -12,7 +12,7 @@
     "test": "ember test",
     "heroku-postbuild": "ember build"
   },
-  "devDependencies": {
+  "dependencies": {
     "@glimmer/application": "^0.4.0",
     "@glimmer/application-pipeline": "^0.5.2",
     "@glimmer/blueprint": "^0.1.12",
