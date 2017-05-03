@@ -1,7 +1,7 @@
 import Component, { tracked } from "@glimmer/component";
 
 export default class WeddingCake extends Component {
-    @tracked engagementNumber: number = 0;
+    @tracked engagementNumber: number = 1200;
 
     didInsertElement() {
         this.getEngagementNumber();

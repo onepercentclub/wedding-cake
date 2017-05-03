@@ -1,4 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800');
+@font-face {
+    font-family: 'Futura';
+    src: url('FuturaStd-Light.eot');
+    src: url('FuturaStd-Light.eot?#iefix') format('embedded-opentype'),
+         url('FuturaStd-Light.woff') format('woff'),
+         url('FuturaStd-Light.ttf') format('truetype'),
+         url('FuturaStd-Light.svg#FontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Futura-medium';
+    src: url('FuturaStd-Medium.eot');
+    src: url('FuturaStd-Medium.eot?#iefix') format('embedded-opentype'),
+         url('FuturaStd-Medium.woff') format('woff'),
+         url('FuturaStd-Medium.ttf') format('truetype'),
+         url('FuturaStd-Medium.svg#FontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Futura-bold';
+    src: url('FuturaStd-Bold.eot');
+    src: url('FuturaStd-Bold.eot?#iefix') format('embedded-opentype'),
+         url('FuturaStd-Bold.woff') format('woff'),
+         url('FuturaStd-Bold.ttf') format('truetype'),
+         url('FuturaStd-Bold.svg#FontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
 
 .dashboard__main-title {
   h1 {
@@ -6,6 +38,7 @@
     font-weight: 300;
     color: $color-primary;
     margin: 0;
+    font-family: 'Futura-medium', sans-serif;
   }
 }
 
@@ -14,7 +47,9 @@
     font-size: 160px;
     font-weight: 800;
     color: $color-primary;
-    margin: 0;
+    margin: 40px 0 0 0;
+    font-family: 'Futura-bold', sans-serif;
+
   }
 }
 
@@ -23,5 +58,6 @@
     font-size: 32px;
     font-weight: 300;
     color: $color-primary;
+    font-family: 'Futura', sans-serif;
   }
 }
