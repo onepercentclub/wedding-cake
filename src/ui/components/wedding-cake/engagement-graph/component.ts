@@ -26,7 +26,7 @@ export default class EngagementGraph extends Component {
         return this.weightedEngagementNumber = {
           value: this.args.engagementNumber,
           weighted: this.calculateWeighted(this.args.engagementNumber),
-          textPosition: this.calculateWeighted(this.args.engagementNumber) - 6,
+          textPosition: this.calculateWeighted(this.args.engagementNumber) - 4.5,
         };
     }
 
@@ -34,7 +34,7 @@ export default class EngagementGraph extends Component {
         return this.weightedMilestones = milestones.map((milestone) => ({
             value: milestone,
             weighted: this.calculateWeighted(milestone),
-            textPosition: this.calculateWeighted(milestone) - 6,
+            textPosition: this.calculateWeighted(milestone) - 10,
         }));
     }
 };
