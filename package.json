@@ -9,7 +9,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "heroku-postbuild": "ember build"
   },
   "devDependencies": {
     "@glimmer/application": "^0.4.0",
