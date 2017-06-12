@@ -4,8 +4,8 @@ const GlimmerApp = require('@glimmer/application-pipeline').GlimmerApp;
 
 module.exports = function(defaults) {
   let app = new GlimmerApp(defaults, {
-    // Add options here
   });
+
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
@@ -21,4 +21,5 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
 
   return app.toTree();
+  app.import('bower_components/chart.js/src/chart.js')
 };
